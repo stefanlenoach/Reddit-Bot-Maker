@@ -10,5 +10,6 @@ To use, run ```ruby user_creator.rb ``` in the terminal from the project folder.
 
 ##upvoter.rb
 
-Uses the list of generated usernames in reddit_bots.txt to upvote a post.
+Uses the list of generated usernames in reddit_bots.txt to upvote a post. In the
+upvoter.rb file, change the ```goto``` link to whichever post you want upvoted.
 To use, run ```ruby upvoter.rb``` in the terminal from the project folder.
