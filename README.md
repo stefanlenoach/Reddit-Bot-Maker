@@ -2,6 +2,11 @@
 
 Uses Watir and Chrome web-driver to automate creating Reddit usernames and upvoting a post with a list of usernames.
 
+
+##Getting started
+Before you run either ```user_creator.rb``` or ```upvoter.rb``` make sure you've
+installed all the necessary gems and placed the chromedriver in your local path
+
 ##user_creator.rb
 
 Creates new Reddit usernames every half hour and saves name and password to reddit_bots.txt. Half hour cycle is used to bypass Reddit timeout for creating users.
