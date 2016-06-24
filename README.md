@@ -1,6 +1,6 @@
 # Reddit Bot Maker
 
-Uses Watir Ruby gem and Chrome web-driver to automate creating Reddit usernames and upvoting a post with a list of usernames.
+Uses Watir and Chrome web-driver to automate creating Reddit usernames and upvoting a post with a list of usernames.
 
 ##user_creator.rb
 
