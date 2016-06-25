@@ -4,8 +4,14 @@ require 'watir-webdriver'
 class Creator
   attr_accessor :browser, :firsts, :seconds
   def initialize
-    @first = ["boat", "prison", "cheese", "gypsy", "phlegm", "french", "pork", "anus", "butt", "fry", "jingle", "penguin", "trump", "mexican", "canadian", "jew", "german", "grape", "dog"]
-    @second = ["jumper", "larder", "lemon", "jackal", "titty", "titties", "tits", "toots", "milktank", "taytay", "butthole", "clown", "spy", "burger", "frenchfry", "washboard", "bball", "prince", "folgers"]
+    @first = ["boat", "jimmy", "prison", "cheese", "gypsy", "" "french",
+      "fry", "jingle", "penguin", "mexican", "canadian","italian",
+       "spanish", "american", "australian", "belgian", "brazilian",
+        "russian", "german", "grape"]
+    @second = ["cowboy", "dingo", "dog", "cat", "apple", "watermelon",
+      "banana", "peach", "pear", "hotsauce", "lemon", "jackal", "milktank",
+       "clown", "spy", "burger", "frenchfry", "washboard", "bball",
+        "prince", "princess", "queen", "king" "folgers"]
 
   end
 

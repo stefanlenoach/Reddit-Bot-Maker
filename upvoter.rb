@@ -23,7 +23,9 @@ class Upvote
     sleep(1)
     @browser.goto('https://www.reddit.com/r/AskReddit/comments/4pfnig/germans_japanese_and_italians_of_reddit_what_did/')
     sleep(1)
-    @browser.div(class: 'arrow up login-required access-required').click
+     if @browser.div(class: 'arrow up login-required access-required')
+       @browser.div(class: 'arrow up login-required access-required').click
+     end
     sleep(5)
     @browser.close
     @i += 1
