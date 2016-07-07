@@ -21,7 +21,7 @@ class Upvote
     #@browser.checkbox(:id => 'rem-login-main').set
     @browser.button(class: 'btn').click
     sleep(1)
-    @browser.goto('https://www.reddit.com/r/AskReddit/comments/4pfnig/germans_japanese_and_italians_of_reddit_what_did/')
+    @browser.goto('https://www.reddit.com/r/HillaryForPrison/comments/4qlh3b/reminder_hillary_clinton_is_under_criminal/')
     sleep(1)
      if @browser.div(class: 'arrow up login-required access-required')
        @browser.div(class: 'arrow up login-required access-required').click

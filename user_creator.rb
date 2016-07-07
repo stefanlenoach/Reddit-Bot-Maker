@@ -1,6 +1,9 @@
 require 'rubygems'
 require 'watir'
+require 'selenium-webdriver'
 require 'watir-webdriver'
+require 'bench'
+
 class Creator
   attr_accessor :browser, :firsts, :seconds
   def initialize
@@ -19,7 +22,7 @@ class Creator
     number = rand(0..9999).to_s
     password = "redditbot123"
     username = @first.shuffle[0] + @second.shuffle[0] + number
-    @browser = Watir::Browser.new
+    @browser = Watir::Browser.new :chrome
     @browser.goto('https://www.reddit.com/login')
     #sleep(1)
     @browser.text_field(:id => 'user_reg').set(username)
@@ -34,6 +37,7 @@ class Creator
     @browser.close
   end
 end
+
 a = Creator.new
 while true
   a.create
